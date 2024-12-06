@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+        <html lang="ko">
+        <head>
+        <meta charset="UTF-8">
+        <title>이민하의 눈물</title>
+        <style>
+            *{
+                margin: 0;
+                padding:0;
+            }
+            body {
+                background-color: #f2f5f8; /* 부드러운 파란색 */
+            }
+            div.wrap{
+                display: flex; 
+                height:100vh;
+                justify-content: center; 
+                align-items: center;
+            }
+            div.wrap_inner{
+                float:left;
+                width:60%;
+                max-width: 800px;
+                margin:0 auto;
+            }
+            div.title{
+                float:left;
+                width:100%;
+                text-align:center; 
+                margin-bottom:30px;
+                font-size:40px;
+                font-weight:bold;
+                color:#37474f; /* 진한 회색 */
+            }
+            div.imgbox{
+                width:50%;
+                float:left;
+            }
+            div.imgbox > img {width:100%;}
+            div.animal{
+                width:100%;
+                float:left;
+                padding:10px 0 10px 0;
+                margin-top:30px;
+                background-color:#78909c; /* 차분한 청회색 */
+                border:solid #546e7a 4px; /* 진한 청회색 */
+                color:#ffffff; /* 흰색 글자 */
+                font-size:25px;
+                font-weight:bold;
+                text-align:center;
+            }
+            div.u-list{
+                float:left;
+                width:46%;
+                padding:0 2% 0 2%;
+            }
+            ul {
+                width:100%;
+                float:left;
+                list-style-type: none;
+                padding: 0; 
+            }
+            li {
+                width:100%;
+                margin: 10px 0;
+            }
+            input[type="text"] {
+                width: 90%;
+                height : 120px; 
+                padding: 11px; 
+                border: 2px solid #b0bec5; /* 연한 청회색 */
+                border-radius: 5px; 
+                font-size: 16px; 
+                transition: border-color 0.3s;
+            }
+
+            input[type="submit"]{
+                width: 100%;
+                height : 60px;
+                border: 2px solid #ffab91; /* 연한 주황색 */
+                border-radius: 5px;
+                background-color: #ffccbc; /* 부드러운 주황색 */
+                font-size:20px;
+                font-weight:bold;
+                color: #d84315; /* 짙은 주황색 */
+                margin-top: 10px;
+            }
+            input[type="submit"]:hover{
+                border-color: #bf360c; /* 더 진한 주황색 */
+                color: #bf360c;
+            }
+        </style>
+        </head>
+        <body>
+        <form>
+            <div class='wrap'>
+                <div class='wrap_inner'>
+                    <div class='title'> 초기 진단 모델 </div>
+                    <div class='u-list'>
+                        <ul>
+                            <li><input type='text' name='word1' placeholder='한국어만 입력해주세요' value={{words}}></li>
+                            <li><input type="submit" value="검사"></li>
+                        </ul>
+                    </div>
+                    <div class='imgbox'><img src='https://img.hankyung.com/photo/201708/BD.14478006.1.jpg'/ id='image-preview'></div>
+                    <div class='animal'>{{msg}}</div>
+
+                </div>
+            </div>
+        </body>
+        </form>

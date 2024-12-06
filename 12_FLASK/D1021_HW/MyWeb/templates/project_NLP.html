@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS & TAG</title>
+    <!--내부 CSS 설정-->
+    <style>
+        * {background-color: rgb(31, 24, 192); }
+        html {height: 100%;}
+        body {height: 100vh;}
+        a {text-decoration: none;
+            font-size: large; background-color: rgb(31, 24, 192);
+            /* color: orange; */
+            font-weight: bolder; text-align: right;}
+        #header, header {background-color: rgb(31, 24, 192);
+                            height: 15vh;}
+
+        #menu, nav {background-color: rgb(31, 24, 192);
+                        /* color: plum; */
+                        width: 5vw; height: 70vh;
+                        float:right; text-align: right;}
+
+        #center,section {background-color:rgb(31, 24, 192);
+                            display: inline-block;
+                            width:60vw; 
+                            margin: 0;
+                            height: 70vh;}
+
+        #side,aside {background-color: rgb(31, 24, 192); 
+                        width: 20vw; height: 70vh; 
+                        float: right;}
+
+        #footer, footer {background-color:rgb(31, 24, 192);
+                            height: 10vh;
+                            clear: both;}
+        #title_title {color: white;}
+        div {display: inline;}
+        .nav1 {color: whitesmoke; font-family:'Segoe UI' }
+        .gray {color: gray;}
+        iframe {background-color: white;}
+    </style>
+</head>
+<body align="center">
+    <!-- <div id="header">HEADER</div>
+    <div id="menu">MENU</div>
+    <div id="center">CENTER</div>
+    <div id="side">SIDE</div>
+    <div id="footer">FOOTER</div> -->
+
+    <header >
+        <h1><img src="/static/images/nlp_title.png" id="dl_title_img" height="200px"></h1><br><br>
+    </header>
+
+    <div><a width="20vw"><br></a></div>
+    <div>
+        <!-- <img src="../images/title.png" id="title_img" diplay="inline"> -->
+        <iframe id="image" src="/NLP_model/" height=70% width="50%"></iframe>
+    </div>
+
+     <nav float=right;>
+        <br><br><br><br><br>
+            <a href="./project_ML.html" class="nav1">ML <a class="gray">―</a></a> 
+        <!-- <a href="http://localhost:8080/cgi-bin/webi.py" target="subFrame" class="nav1">ML <a class="gray">―</a></a>  -->
+            <br><br><br><br>
+            <a href="./project_DL.html" class="nav1">DL <a class="gray">―</a></a> <br><br><br><br>
+            <a href="./project_IMAGE.html"class="nav1">IMAGE <a class="gray">―</a></a> <br><br><br><br>
+            <a href="./project_NLP.html"class="nav1">NLP <a class="gray">―</a></a> <br><br><br>
+        
+    </nav>
+    
+    <footer></footer>
+</body>
+</html>

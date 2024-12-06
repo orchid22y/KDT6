@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>---심장병 발병가능성 & 병원방문 필요성 예측---</title>
+ </head>
+ <body><p><심장병 발병가능성 & 병원방문 필요성 예측></p>
+  <p>해당하는 숫자를 입력해주세요.</p>
+  <form>
+    <p><1. BMI 지수 (소수점2자리 수까지 입력해주세요.)> (예: 25.67 )</p>
+    <input type='text' name='bmi' placeholder='BMI지수', value={{data1}}><br/>
+
+    <p><2. 흡연여부> </p>
+    <p>비흡연자:0, 금연상태:1, 흡연자:2 </p>
+    <input type='text' name='smoking' placeholder='흡연여부', value={{data2}}><br/>
+
+    <p><3. 음주여부> </p>
+    <p>음주를 하지 않음:0, 음주함:1 </p>
+    <input type='text' name='alcohol' placeholder='음주여부', value={{data3}}><br/>
+
+    <p><4. 뇌졸중 경험 여부> </p>
+    <p>없음:0, 있음:1 </p>
+    <input type='text' name='stroke' placeholder='뇌졸중 경험', value={{data4}}><br/>
+
+    <p><5. 신체적건강> 지난 30일 동안 신체 건강이 좋지 않았던 날은 며칠이었습니까? (0-30일) </p>
+    <input type='text' name='physicalhealth' placeholder='예: 25', value={{data5}}><br/>
+
+    <p><6. 정신 건강 상태>: 지난 30일 동안 정신 건강이 좋지 않았던 날은 며칠이었습니까? (0-30일) </p>
+    <input type='text' name='mentalhealth' placeholder=예: 25', value={{data6}}><br/>
+
+    <p><7. 보행 곤란>: 걷거나 계단을 오르는데 심각한 어려움이 있습니까? </p>
+    <p>아니오:0, 예:1</p>
+    <input type='text' name='difficultywalking', value={{data7}}><br/>
+
+    <p><8. 성별>: 당신은 남성입니까, 여성입니까? </p>
+    <p>남성:0, 여성:1</p>
+    <input type='text' name='gender', value={{data8}}><br/>
+
+    <p><9. 당뇨병 여부>: 당뇨병 진단을 받은 적이 있습니까? </p>
+    <p>아니오:0, 예:1</p>
+    <input type='text' name='diabetic', value={{data9}}><br/>
+
+    <p><10. 신체 활동 여부>: 지난 30일 동안 일상적인 업무 외에 신체 활동이나 운동을 한 적이 있습니까?</p>
+    <p> 아니오:0, 예:1 </p>
+    <input type='text' name=''physicalactivity, value={{data10}}><br/>
+
+    <p><11. 수면 시간): 24시간 기준으로 평균 몇 시간의 수면을 취하십니까?</p>
+    <input type='text' name='sleep' placeholder='수면패턴', value={{data11}}><br/>
+
+    <p><12. 천식 여부>: 천식을 진단받은 적이 있습니까? </p>
+    <p>없음:0, 있음:1</p>
+    <input type='text' name='asthma', value={{data12}}><br/>
+
+    <p><13. 신장 질환 여부): 신장 결석, 방광 감염 또는 요실금 제외, 신장 질환을 진단받은 적이 있습니까?</p>
+    <p>없음:0, 있음:1</p>
+    <input type='text' name='kidney', value={{data13}}><br/>
+
+    <p><14. 피부암 여부>: 피부암을 진단받은 적이 있습니까?</p>
+    <p>없음:0, 있음:1</p>
+    <input type='text' name='skincancer', value={{data14}}><br/>
+
+    <p><15. 연령 카테고리>: 14단계 연령 카테고리</p>
+    <p>18-24: 0, 25-29: 1, 30-34: 2, 35-39: 3,
+     40-44: 4, 45-49: 5, 50-54: 6, 55-59: 7, 60-64: 8, 
+     65-69: 9, 70-74: 10, 75-79: 11, 80 or older: 12 </p>
+    <input type='text' name='agecategory', value={{data15}}><br/>
+
+    <p><16. 인종/민족>: 추정된 인종/민족 값?</p>
+    <p> Asian:0, Black:1, Hispanic:2, Other:3, White:4</p>
+    <input type='text' name='race', value={{data16}}><br/>
+
+    <p><17. 전반적인 건강 상태>: 전반적으로 당신의 건강 상태는 어떻습니까?</p>
+    <p> 훌륭함:0, 매우 좋음:1, 좋음:2, 괜찮음:3, 나쁨:4</p>
+    <input type='text' name='genhealth', value={{data17}}><br/>
+
+    <p><input type="submit" value="예측"><Br/>[ {data} 심장병 발병가능성 & 병원방문 필요성 :{msg}]</p>
+
+  </form>
+ </body>
+</html>

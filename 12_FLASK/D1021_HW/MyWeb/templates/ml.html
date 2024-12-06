@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <title>---건강 점수 측정---</title>
+      <style>
+          body {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh; /* 화면 전체 높이 */
+                margin: 0;
+                font-family: Arial, sans-serif; /* 기본 글꼴 */
+                text-align: center; /* 가운데 정렬 */
+            }
+          </style>
+     </head>
+     <body>
+      <form>
+        주당 공부 시간: <input type='text' name='q0' placeholder='20' value='{data[0]}'><br/>
+        출석률: <input type='text' name='q1' placeholder='80' value='{data[1]}'><br/>
+        이전 학기 성적: <input type='text' name='q2' placeholder='75' value='{data[2]}'><br/>
+        부모 학력: <input type='text' name='q3' placeholder='8 부모 학력 (단위: 년)' value='{data[3]}'><br/>
+        사교육 여부: <input type='text' name='q4' placeholder='사교육 여부(예=1,아니요=0)' value='{data[4]}'><br/>
+        <p><input type="submit" value="결과보기"></p>
+        <p>{msg}</p>
+      </form>
+     </body>
+    </html>

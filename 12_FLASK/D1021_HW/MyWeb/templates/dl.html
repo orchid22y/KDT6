@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+    <html lang="en">
+     <head>
+      <meta charset="UTF-8">
+      <title>---흡연여부예측모델---</title>
+      <style>
+        body {
+            font-family: Arial, sans-serif; 
+            background-size: cover; /* 이미지 크기 조정 */
+            background-position: left; /* 이미지 위치 조정 */
+        }
+        form { max-width: 500px; margin: 0 auto; }
+        input { margin-bottom: 10px; width: 100%; padding: 5px; }
+        input[type="submit"] { width: auto; }
+      </style>
+     </head>
+     <body>
+      <form>
+        <h2>건강 정보 입력</h2>
+        <p>각 항목에 해당하는 값을 입력하세요:</p>
+        당뇨병여부<input type="number" step="0.01" name="Diabetes_binary" placeholder="당뇨병 여부 (0 또는 1)" value="{inputs.get('Diabetes_binary', '')}">
+        고혈압 여부<input type="number" name="HighBP" placeholder="고혈압 여부 (0 또는 1)" value="{inputs.get('HighBP', '')}">
+        고콜레스테롤<input type="number" step="0.01" name="HighChol" placeholder="고콜레스테롤 (0 또는 1)" value="{inputs.get('HighChol', '')}">
+        콜레스테롤 검사 여부<input type="number" name="CholCheck" placeholder="콜레스테롤 검사 여부 (0 또는 1)" value="{inputs.get('CholCheck', '')}">
+        BMI<input type="number" step="0.1" name="BMI" placeholder="BMI" value="{inputs.get('BMI', '')}">
+        뇌졸중 경험<input type="number" step="0.01" name="Stroke" placeholder="뇌졸중 경험 (0 또는 1)" value="{inputs.get('Stroke', '')}">
+        심장병<input type="number" step="0.01" name="HeartDiseaseorAttack" placeholder="심장병 또는 심장마비 (0 또는 1)" value="{inputs.get('HeartDiseaseorAttack', '')}">
+        신체 활동<input type="number" name="PhysActivity" placeholder="신체 활동 (0 또는 1)" value="{inputs.get('PhysActivity', '')}">
+        과일 섭취<input type="number" name="Fruits" placeholder="과일 섭취 (0 또는 1)" value="{inputs.get('Fruits', '')}">
+        채소 섭취<input type="number" name="Veggies" placeholder="채소 섭취 (0 또는 1)" value="{inputs.get('Veggies', '')}">
+        과도한 알코올 섭취<input type="number" name="HvyAlcoholConsump" placeholder="과도한 알코올 섭취 (0 또는 1)" value="{inputs.get('HvyAlcoholConsump', '')}">
+        의료 보험 여부<input type="number" name="AnyHealthcare" placeholder="의료 보험 여부 (0 또는 1)" value="{inputs.get('AnyHealthcare', '')}">
+        비용으로 인한 의사 방문 불가<input type="number" step="0.01" name="NoDocbcCost" placeholder="비용으로 인한 의사 방문 불가 (0 또는 1)" value="{inputs.get('NoDocbcCost', '')}">
+        일반 건강 상태<input type="number" step="0.01" name="GenHlth" placeholder="일반 건강 상태 (1-5)" value="{inputs.get('GenHlth', '')}">
+        정신 건강 일수<input type="number" step="0.01" name="MentHlth" placeholder="정신 건강 일수 (0-30)" value="{inputs.get('MentHlth', '')}">
+        신체 건강 일수<input type="number" step="0.01" name="PhysHlth" placeholder="신체 건강 일수 (0-30)" value="{inputs.get('PhysHlth', '')}">
+        걷기 어려움<input type="number" step="0.01" name="DiffWalk" placeholder="걷기 어려움 (0 또는 1)" value="{inputs.get('DiffWalk', '')}">
+        성별<input type="number" name="Sex" placeholder="성별 (0: 여성, 1: 남성)" value="{inputs.get('Sex', '')}">
+        나이<input type="number" name="Age" placeholder="나이" value="{inputs.get('Age', '')}">
+        교육 수준<input type="number" step="0.01" name="Education" placeholder="교육 수준 (1-6)" value="{inputs.get('Education', '')}">
+        소득 수준<input type="number" step="0.01" name="Income" placeholder="소득 수준(1~10)" value="{inputs.get('Income', '')}">
+        <p><input type="submit" value="예측"><br>
+            <font size="18" color="#f3c262">결과: {result}</font>
+      </form>
+     </body>
+    </html>

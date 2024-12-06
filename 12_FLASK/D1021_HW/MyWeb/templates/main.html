@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = 'UTF-8'>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> PORTFOLIO </title>
+        <style>
+            div.content{ /* div 태그의 class가 content인 것 */
+                width: 350px;
+                height: 500px;
+                overflow: hidden;
+                padding: 20px;
+            }
+            header {
+            padding: 20px;
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            }
+            img {
+                width: 100%; 
+                height: auto;
+                margin-right: 10px;
+            }
+            a{
+                display:inline-block;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> PORTFOLIO </h1>
+        </header>   
+
+        <hr>
+        <iframe src="./navi.html" width="100%" height="50" frameborder="0" scrolling="no"></iframe>
+        <hr>
+
+        <a href="ml.html" target="_blank">
+            <div class="content">
+                <img src="../static/images/study.jpg"/>
+                <h3>시험 결과 예측 모델</h3>
+            </div>
+        </a>
+
+        <a href="dl.html" target="_blank">
+            <div class="content">
+                <img src="../static/images/smoking.jpg"/>
+                <h3>흡연 여부 예측 모델</h3>
+            </div>
+        </a>
+
+        <a href="vi.html" target="_blank">
+            <div class="content">
+                <img src="../static/images/emoticon.jpg" />
+                <h3>이모티콘 분류 모델</h3>
+            </div> 
+        </a>
+
+        <hr>
+        <footer>
+            <h6>PROJECT BY 박란영</h6>
+        </footer>
+    </body>
+</html> 
