@@ -1,0 +1,21 @@
+body {
+    background-image:url('../../images/coffee-beans.jpg');
+    background-size: auto 100vh;  /* 세로 크기에 맞추기 */
+    background-position: center;  /* 중앙에 배치 */
+    font-family: serif;
+    color: black;
+    
+    }
+h1 {
+border-bottom: 1px solid gray;
+color: rgb(125, 76, 11);
+font-weight: bold;
+}
+em {
+color: red;
+}
+p.first {
+    color:green;
+    font-weight: bold ;
+}
+p.second {color: blue;}
