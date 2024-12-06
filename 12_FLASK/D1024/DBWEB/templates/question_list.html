@@ -1,0 +1,28 @@
+{% block content %}
+    <h1>질문 게시판(table ver)</h1>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>날짜</th>
+        </tr>
+    
+    {% if question_list %}
+        {% for question in question_list %}
+        
+        <tr>
+            <td><a href = /qdetail/{{question.id}}>{{question.id}}</a></td>
+            <td><a href = /qdetail/{{question.id}}>{{question.subject}}</a></td>
+            <td><a href = /qdetail/{{question.id}}>{{question.content}}</a></td>
+  
+        </tr>
+        
+        {% endfor %}
+    
+    {% else %}
+    <tr>
+        <td class="msg" colspan="3">등록된 질문이 없습니다.</td>
+    </tr> 
+    {% endif %}
+    </table>
+{%endblock%}
